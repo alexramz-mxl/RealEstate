@@ -13,6 +13,9 @@ body{
 a{
     text-decoration: none;
 }
+img{
+    max-width: 100%;
+}
 p{
     line-height: 1.5;
 }
@@ -25,15 +28,61 @@ h1{
 }
 h2{
     font-size: 2rem;
+    text-align: center;
 }
 h3{
     font-size: 2rem;
 }
 /*utilities*/
 .container{
-    width: 90%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 20px;
+}
+.btn-details{
+    display: block;
+    background-color: rgb(220, 146, 9);
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.btn-footer{
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.table{
+    width: 100%;
+    background-color: var(--primary);
+    text-align: center;
+    font-size: 1.6rem;
+    border-collapse: collapse;
+}
+td,th{
+    padding: 0.5rem;
+    border-bottom: 1px solid white;
+}
+.table-header{
+    background-color: var(--primary);
+    color: white;
+}
+.text-center{
+    text-align: center;
+}
+.table-content{
+    background-color: var(--secondary);
+}
+.main-text{
+    font-weight: 900;
+}
+.secondary-text{
+    font-weight: 700;
+}
+.light-text{
+    font-weight: 300;
 }
 /*header*/
 .site-header{
@@ -44,7 +93,7 @@ h3{
 }
 .site-header a{
     color: white;
-    margin-right: 3rem;
+    margin-right: 2.7rem;
 }
 .bar{
     display: flex;
@@ -61,4 +110,128 @@ h3{
 .header-text-container p{
     font-size: 2.5rem;
     font-weight: 700;
+}
+/*utilities*/
+/*about us*/
+.about-container{
+    display: flex;
+    justify-content: space-around;
+}
+.about-item h3{
+    text-align: center;
+}
+.about-item img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.houses-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1rem;
+}
+.house-item{
+    background-color: antiquewhite;
+}
+.house-text{
+    padding: 1rem;
+}
+.price{
+    color: rgb(31, 82, 31);
+}
+.house-item ul{
+    list-style-type: none;
+}
+/*contact*/
+.contact-header{
+    background-color: orange;
+    height: 40vh;
+}
+.contact-header a{
+    color: white;
+    margin-right: 20px;
+}
+.description{
+    font-size: 14px;
+}
+.instructions{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*form*/
+.form-container{
+    background-color: var(--secondary);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+fieldset{
+    border: 1px solid gray;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+legend{
+    font-size: 1.6rem;
+}
+.form-control{
+    margin-bottom: 1.5rem;
+}
+.form-control label{
+    display: inline-block;
+    font-size: 1.6rem;
+    width: 150px;
+    text-align: right;
+}
+.form-control input,
+.form-control textarea{
+    display: inline-block;
+    width: 60%;
+    padding: 3px;
+    font-size: 1.6rem;
+}
+/*footer*/
+.footer-container{
+    background-image: url(/img/encuentra.jpg);
+    height: 40vh;
+    background-size: cover;
+    color: white;
+    margin-top: 5rem;
+}
+.footer-container-con{
+    background-image: url(/img/encuentra.jpg);
+    height: 40vh;
+    background-size: cover;
+  
+}
+.footer-site{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 22vh;
+    padding: 3rem;
+}
+.footer-container a{
+    color: black;
+}
+.sm-container{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 50px;
+    margin-right: 1rem;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.privacy{
+    border-left: 2px solid black;
+    padding-left: 1rem;
+    margin-left: 1rem;
+}
+.highlight-text{
+    text-decoration: underline;
 }
