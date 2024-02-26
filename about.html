@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/mystyles.css">
+    <script src="https://kit.fontawesome.com/337be747ec.js" crossorigin="anonymous"></script> 
     <title>RealEstate</title>
 </head>
 <body>
@@ -11,9 +16,9 @@
                 <div class="bar">
                 <h1>RealEstate</h1>
                 <nav>
-                    <a href="#"><b>About</b></a>
-                    <a href="#"><b>Blog</b></a>
-                    <a href="#"><b>Contact</b></a>
+                    <a href="about.html"><b>About</b></a>
+                    <a href="blog.html"><b>Blog</b></a>
+                    <a href="contact.html"><b>Contact</b></a>
                 </nav>
             </div>
         </div>
@@ -21,32 +26,46 @@
     </header>
     <main>
         <h2><b>OUR TEAM</b></h2>
-        <table>
+        <table class="table">
             <thead>
-                <tr>
+                <tr class="table-header">
                     <th>Name:</th>
                     <th>Phone:</th>
                     <th>Email:</th>
                 </tr>
+                </thead>
                 <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                    <tr class="table-content">
+                        <td>John Wick</td>
+                        <td>686 906 8700</td>
+                        <td>johnwick@laureate.mx</td>
                     </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                    <tr class="table-content">
+                        <td>Ethan Hunt</td>
+                        <td>686 609 0087</td>
+                        <td>ethanhunt@uvmnet.edu</td>
                     </tr>
                 </tbody>
-            </thead>
         </table>
     </main>
+
+    <footer class="container">
+        <div class="bar container">
+        <div>
+            <p><b>POWERED BY <span class="secondary-text highlight-text">Zillow</b></span></p>
+        </div>
+        <div>
+            <p>Copyright &copy; 2024
+            <span class="secondary-text privacy">
+                <a href="#" class="highlight-text">Policy</a>
+            </span>
+            </p>
+        </div>
+        <div class="flex-center">
+            <a href="#" class="sm-container flex-center"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="sm-container flex-center"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="sm-container flex-center"><i class="fa-brands fa-youtube"></i></a>
+        </div> 
+    </footer>
 </body>
 </html>

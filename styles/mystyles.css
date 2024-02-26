@@ -62,9 +62,9 @@ h3{
 }
 .table{
     width: 100%;
-    background-color: var(--primary);
+    background-color: orange;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     border-collapse: collapse;
 }
 td,th{
@@ -72,15 +72,16 @@ td,th{
     border-bottom: 1px solid white;
 }
 .table-header{
-    background-color: var(--primary);
+    background-color: orange;
     color: white;
 }
 .text-center{
     text-align: center;
 }
 .table-content{
-    background-color: var(--secondary);
+    background-color: beige;
 }
+
 .main-text{
     font-weight: 900;
 }
@@ -93,7 +94,7 @@ td,th{
 /*header*/
 .site-header{
     background-image: url(../img/header.jpg);
-    height: 40vh;
+    height: 60vh;
     background-size: cover;
     color: white;
 }
@@ -145,7 +146,6 @@ td,th{
     width: 65%;
     height: 50%;
     align-items: center;
-    border-radius: 30%;
 }
 .blog-img a{
     width: 100%;
@@ -221,10 +221,12 @@ td,th{
 .house-item ul{
     list-style-type: none;
 }
+/*table*/
+
 /*contact*/
 .contact-header{
     background-image: url(/img/penthouseheader2.jpg);
-    height: 35vh;
+    height: 60vh;
 }
 .contact-header a{
     color: white;
