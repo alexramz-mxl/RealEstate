@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        body{
+            background-color: black;
+        
+            .site-header nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            }
+            @media(min-width: 768px;){
+                body{
+                    background-color: black;
+                }
+                .site-header nav{
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                nav a:last-of-type{
+                    font-size: 20px;
+                }
+                nav a:last-of-type{
+                    display: block;
+                }
+            }
+        }    
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </nav>
+
+    </header>
+</body>
+</html>

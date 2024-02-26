@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/mystyles.css">
+    <script src="https://kit.fontawesome.com/337be747ec.js" crossorigin="anonymous"></script> 
     <title>CONTACT</title>
 </head>
 <body>
@@ -16,8 +17,8 @@
                 <h1 class="main-text">RealEstate</h1>
                 <nav>
                     <a href="about.html">About</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
                 </nav>
         </div>
     </div>
@@ -30,7 +31,7 @@
         </div>
         <form class="form-container container">
             <fieldset>
-                <legend>PERSONAL INFORMATION</legend>
+                <legend><b>PERSONAL INFORMATION</b></legend>
             <div class="form-control">
                 <label>Name:</label>
                 <input type="text" id="txtName">
@@ -48,9 +49,57 @@
                 <textarea></textarea>
             </div>
             </fieldset>
+
+            <fieldset>
+                <legend><b>PRODUCT INFORMATION</b></legend>
+                    <div class="form-control">
+                            <label>Type:</label>
+                        <select name="options">
+                            <option value="1">---OPTION 1---</option>
+                            <option value="1">---OPTION 2---</option>
+                            <option value="1">---OPTION 3---</option>
+                        </select>
+                        </div>
+
+                     <div class="form-control">
+                        <label>Number</label>
+                        <input type="num" id="txtNumber">
+
+
+                     </div>
+
+
+
+
+            </fieldset>
+            <fieldset>
+                <legend><b>CONTACT INFORMATION</b></legend>
+                <div class="form-control container">
+                    <div class="bar">
+                        <label>Email:</label>
+                        <input type="radio">
+
+                        <label>Phone:</label>
+                        <input type="radio">
+                    </div>
+                </div>
+                    <div class="form-control">
+                        <div class="bar">
+                            <label>Date:</label>
+                            <input type="date" id="txtName">
+
+                            <label>Hour:</label>
+                            <input type="hour" id="txtName">
+                        </div>
+
+                    </div>
+
+                </legend>
+
+            </fieldset>
         </form>
     </main>
-    <footer class="footer-container-con">
+    <footer class="container">
         <div class="bar container">
         <div>
             <p><b>POWERED BY <span class="secondary-text highlight-text">Zillow</b></span></p>
@@ -63,10 +112,10 @@
             </p>
         </div>
         <div class="flex-center">
-            <a href="#" class="sm-container flex-center"></a><i class="fa-brands fa-facebook-F"></i></div></a>
-            <a href="#" class="sm-container flex-center"></a><i class="fa-brands fa-linkkedin-in"></i></div></a>
-            <a href="#" class="sm-container flex-center"></a><i class="fa-brands fa-youtube"></i></div></a>
-        </div>
+            <a href="#" class="sm-container flex-center"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="sm-container flex-center"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="sm-container flex-center"><i class="fa-brands fa-youtube"></i></a>
+        </div> 
     </footer>
 </body>
 </html>
